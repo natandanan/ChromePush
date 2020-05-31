@@ -12,7 +12,7 @@ const urlB64ToUint8Array = base64String => {
 }
 // saveSubscription saves the subscription to the backend
 const saveSubscription = async subscription => {
-  const SERVER_URL = 'http://localhost:4000/save-subscription';
+  const SERVER_URL = 'http://10.0.2.2:4000/save-subscription';
   const response = await fetch(SERVER_URL, {
     method: 'post',
     headers: {
