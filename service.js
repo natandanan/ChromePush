@@ -16,8 +16,8 @@ const saveSubscription = async subscription => {
   const response = await fetch(SERVER_URL, {
     method: 'post',
     headers: {
-      'Content-Type': 'application/json',
-      'Access-Control-Allow-Origin': '*',
+      'Content-Type': 'application/json'
+      //'Access-Control-Allow-Origin': '*'
     },
     body: JSON.stringify(subscription),
   })
