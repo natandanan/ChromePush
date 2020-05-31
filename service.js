@@ -17,6 +17,7 @@ const saveSubscription = async subscription => {
     method: 'post',
     headers: {
       'Content-Type': 'application/json',
+      'Access-Control-Allow-Origin': '*',
     },
     body: JSON.stringify(subscription),
   })
