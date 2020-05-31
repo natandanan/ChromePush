@@ -15,9 +15,9 @@ const saveSubscription = async subscription => {
   const SERVER_URL = 'https://10.0.2.2:4000/save-subscription';
   const response = await fetch(SERVER_URL, {
     method: 'post',
+    mode: 'cors',
     headers: {
-      'Content-Type': 'application/json'
-      //'Access-Control-Allow-Origin': '*'
+      'Content-Type': 'application/json',
     },
     body: JSON.stringify(subscription),
   })
