@@ -25,7 +25,7 @@ const requestNotificationPermission = async () => {
 
 const main = async () => {
   check();
-  const permission = await requestNotificationPermission();
+  //const permission = await requestNotificationPermission();
   const swRegistration = await registerServiceWorker();
 };
 // main(); we will not call main in the beginning.
